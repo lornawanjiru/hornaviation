@@ -1,0 +1,230 @@
+{% load static%}
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>HORN AVIATION</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'hornaviationapp/css/main.css'%}" />
+	</head>
+	<body class="is-preload">
+		
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<div class="logo">
+						
+                    </div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="{% url 'index' %}">Home</a></li>
+								<li class="current"><a href="{% url 'About' %}">About Us</a></li>
+								<li><a href="{% url 'Services' %}">Services </a></li>
+								<li><a href="{% url 'Contactus' %}">Contact Us </a></li>
+								<li><a href="{% url 'Blog' %}">Blog</a></li>
+							</ul>
+						</nav>
+
+				</div>
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2><em>Our Story</em></h2>
+										
+									</header>
+									<span class="image featured">
+									<div class = "image_box">									
+                                    </div>
+									</span>
+                                    
+									
+									<h1>In the Beginning</h1>
+											<p>Horn Aviation Logistics was conceptualized in 2017 when we realized that clients were in
+												need of a consistent provider in air transport solution in Juba, South Sudan.
+												There was a need for clients to harmonize their air operations into one company that could
+												guarantee<br>
+												✦ Safe and reliable aircraft operations.<br>
+												✦ Consistent availability of aircraft solutions.<br>
+												✦ Stable pricing of services.<br>
+												✦ Credit facility through trusted partnerships.</h4></p>
+
+									<h3>Our Commitments</h3>
+									<p>
+											With our objectives identified we committed to the following solutions<br>
+												✦ Have Standard Operating Procedures that exemplify safe operations.<br>
+												✦ Operate serviceable and airworthy aircrafts if not new.<br>
+												✦ Generate a central pool of aircrafts for clients to pick from.<br>
+												✦ Have work contracts in place.</p>
+								</article>
+
+						</div>
+					</div>
+				</section>				
+						<section class = "wrapper style1">
+                                    <div class = "container">
+										<header>
+											<h2><em>Our Team</em></h2> 
+												
+										</header>
+										<div class="row">
+										  <section class="col-6 col-12-narrower">
+											<div class="team1">				
+											    <div class="staff-entry">
+													<a href="#" class="staff-img" style="background-image: url({% static 'hornaviationapp/images/pilot.jpg'%});"></a>
+													<div class="desc">
+														<h3>Patrick Suleiman Lohucholi.</h3>
+														<span>Managing Director</span>
+														<p> ✦ South Sudanese National<br>
+														    ✦ Passionate about aviation <br>
+															✦  Nation building</p>
+														<p>
+															<ul class="colorlib-social-icons">
+																<li><a href="#"><i class="icon brands fa-twitter"></i></a></li>
+																<li><a href="#"><i class="icon brands fa-facebook-f"></i></a></li>
+																<li><a href="#"><i class="icon brands fa-linkedin-in"></i></a></li>
+																<li><a href="#"><i class="icon brands fa-google-plus-g"></i></a></li>
+															</ul>
+														</p>
+													</div>
+												</div>
+											</div>
+											</section>
+											<section class="col-6 col-12-narrower">
+											<div class="team2">				
+												<div class="staff-entry">
+													<a href="#" class="staff-img" style="background-image: url({% static 'hornaviationapp/images/pilot1.jpg'%});"></a>
+													<div class="desc">
+														<h3>James Wachira</h3>
+														<span>General Manager</span>
+														<p> ✦ 20 years aviation experience in<br>
+ 															 the region <br>
+															✦ Exceptional management skills
+															  through</p>
+														<p>
+															<ul class="colorlib-social-icons">
+																<li><a href="#"><i class="icon brands fa-twitter"></i></a></li>
+																<li><a href="#"><i class="icon brands fa-facebook-f"></i></a></li>
+																<li><a href="#"><i class="icon brands fa-linkedin-in"></i></a></li>
+																<li><a href="#"><i class="icon brands fa-google-plus-g"></i></a></li>
+															</ul>
+														</p>
+													</div>
+												</div>
+											</div>
+											</section>
+									    </div>	
+									</div>	
+								</section>
+				
+						
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Information</h3>
+								<ul class="links">
+									<li><a href="{% url 'index' %}"><i class="fas fa-check"></i> Home</a></li>
+									<li><a href="{% url 'About' %}"><i class="fas fa-check"></i> About Us</a></li>
+									<li><a href="{% url 'Services' %}"><i class="fas fa-check"></i> Services</a></li>
+									<li><a href="{% url 'Contactus' %}"><i class="fas fa-check"></i> Contact Us</a></li>
+									<li><a href="{% url 'Blog' %}"><i class="fas fa-check"></i> Blog</a></li>									
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">								
+								<h3>Recent Blog</h3>
+										<div class="f-blog">
+											<a href="{% url 'Blog' %}" class="blog-img" style="background-image: url({% static 'hornaviationapp/images/pic05.jpg'%});">
+											</a>
+											<div class="desc">
+												<h2><a href="{% url 'Blog' %}">Horn Aviation</a></h2>
+												<p class="admin"><span>1st Jan 2020</span></p>
+											</div>
+										</div>
+										<div class="f-blog">
+											<a href="{% url 'Blog' %}" class="blog-img" style="background-image: url({% static 'hornaviationapp/images/pic06.jpg'%});">
+											</a>
+											<div class="desc">
+												<h2><a href="{% url 'Blog' %}">PLanes</a></h2>
+												<p class="admin"><span>1st Jan 2020</span></p>
+											</div>
+										</div>
+										<div class="f-blog">
+											<a href="{% url 'Blog' %}" class="blog-img" style="background-image: url({% static 'hornaviationapp/images/pic07.jpg'%});">
+											</a>
+											<div class="desc">
+												<h2><a href="{% url 'Blog' %}">Travel Safe</a></h2>
+												<p class="admin"><span>1st Jan 2020</span></p>
+											</div>
+										</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<h3>Get In Touch</h3>
+								<form action="contact_info" method="POST">
+									{% csrf_token %}
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobilep">
+											<input type="text" name="fname" id="name" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-mobilep">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div>
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Horn Aviation. All rights reserved 2020</li><br>
+								<li>Built and Maintained by 120Frames, Begetter</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="{% static 'hornaviationapp/js/jquery.min.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/jquery.dropotron.min.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/browser.min.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/breakpoints.min.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/util.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/main.js'%}"></script>
+
+	</body>
+</html>

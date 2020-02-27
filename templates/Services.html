@@ -1,0 +1,220 @@
+{% load static%}
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>HORN AVIATION</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'hornaviationapp/css/main.css'%}" />
+	</head>
+	<body class="is-preload">
+		
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<div class="logo">
+						
+                    </div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="{% url 'index' %}">Home</a></li>
+								<li ><a href="{% url 'About' %}">About Us</a></li>
+								<li class="current"><a href="{% url 'Services' %}">Services </a></li>
+								<li><a href="{% url 'Contactus' %}">Contact Us </a></li>
+								<li><a href="{% url 'Blog' %}">Blog</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row gtr-200">
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<img src = "{% static 'hornaviationapp/images/pic05.jpg'%}"><br>
+									<h3>Aircraft Charters.</h3>
+									<p>There are many advantages to private jet travel. 
+									While it’s true that private jet travel is absolute luxury,
+									 the real advantages of flying on a private plane are convenience,
+									  privacy and efficiency. Private air travel saves you time.
+									   No delays, no queues, no inconvenient airport transfers and no 
+									   hanging around in faceless terminals checking your watch. 
+									   You choose the time you want to fly, where across the world you want to go and 
+									   when you want to return.
+									 You set your own timetable and we plan around it.</p>
+									
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<img src = "{% static 'hornaviationapp/images/pic06.jpg'%}"><br>
+									<h3>Logistic support for air transport movements.</h3>
+									<p>To provide our clients with tailor made and innovative air transport experiences
+									 through professional management, ethical business practices and excellence in an
+									  environment that fosters continuous improvement, teamwork and growth for our employees 
+									  and profitability for the company while positioning the 
+									company to be a global leader in provision of innovative aviation services.</p>
+									
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<img src = "{% static 'hornaviationapp/images/pic08.jpg'%}"><br>
+									<h3>Credit facility for the above to our esteemed clients.</h3>
+									<p>Learn how to write effective thank you letters to your customers that 
+									... This way, you can save handwritten notes for instances that require above-and-beyond 
+									customer service. ... Close your letter with a final line, with something simple like: ...
+									 Here's a thank you letter I received from my credit card company, ...</p>
+									
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+               <!-- CTA -->
+				<section id="cta" class="wrapper style3">
+					<div class="container">
+						<header>
+							<h2>Be Great! It’s as simple as two words. Greatness comes from Truth, Integrity and helping others, this is our mission statement! <br> 
+							We are always here to help clients through their engine processes.</h2>
+							<h2>Contact Us to get Started</h2><br>
+							<a href="{% url 'Contactus' %}" class="button">Contact Us</a>
+						</header>
+					</div>
+				</section><br>
+            <!-- Gigantic Heading -->
+				<section class="wrapper style2">
+					<div class="container">
+						<header class="major">
+							<h2>Why Horn Aviation?</h2>
+							<p>Be Great! It’s as simple as two words. Greatness comes from Truth, 
+								Integrity and helping others, this is our mission statement! 
+								We are always here to help clients through their engine processes.
+							</p>
+							<a href="#" class="button"><i class="fa fa-folder-open"></i>  COMPANY PROFILE</a>
+						</header>
+					</div>
+				</section>
+
+				<section class="wrapper style1">
+					<div class="container">
+					<h2> Our Specialty</h2>
+					<p>
+						Horn Aviation  has extensive knowledge in the fixed wing PT6, PW100, JT15D and CF34 markets.
+						<br><br>
+						We offer a range of PT6 and PW100 services, all designed to help your company save money and feel comfortable that you have a team behind you. Whether you have a small repair or complete overhaul, we have you covered. Our services are available a la carte or complete coverage so you can get precisely what you need.
+						<br><br>
+						Whatever your situation and the challenges you face, we have solutions.
+						<br><br>
+						For additional information on our management solutions and to obtain preferential pricing on shop visits for any of your engines,  give me a call at any time at 856-466-2762 or alternatively send us a message using the Contact button below.
+					</p><br><br>
+					
+					</div>
+				</section>	
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<section class="col-3 col-6-narrower col-12-mobilep">
+								<h3>Information</h3>
+								<ul class="links">
+									<li><a href="{% url 'index' %}"><i class="fas fa-check"></i> Home</a></li>
+									<li><a href="{% url 'About' %}"><i class="fas fa-check"></i> About Us</a></li>
+									<li><a href="{% url 'Services' %}"><i class="fas fa-check"></i> Services</a></li>
+									<li><a href="{% url 'Contactus' %}"><i class="fas fa-check"></i> Contact Us</a></li>
+									<li><a href="{% url 'Blog' %}"><i class="fas fa-check"></i> Blog</a></li>									
+								</ul>
+							</section>
+							<section class="col-3 col-6-narrower col-12-mobilep">								
+								<h3>Recent Blog</h3>
+										<div class="f-blog">
+											<a href="{% url 'Blog' %}" class="blog-img" style="background-image: url({% static 'hornaviationapp/images/pic05.jpg'%});">
+											</a>
+											<div class="desc">
+												<h2><a href="{% url 'Blog' %}">Horn Aviation</a></h2>
+												<p class="admin"><span>1st Jan 2020</span></p>
+											</div>
+										</div>
+										<div class="f-blog">
+											<a href="{% url 'Blog' %}" class="blog-img" style="background-image: url({% static 'hornaviationapp/images/pic06.jpg'%});">
+											</a>
+											<div class="desc">
+												<h2><a href="{% url 'Blog' %}">PLanes</a></h2>
+												<p class="admin"><span>1st Jan 2020</span></p>
+											</div>
+										</div>
+										<div class="f-blog">
+											<a href="{% url 'Blog' %}" class="blog-img" style="background-image: url({% static 'hornaviationapp/images/pic07.jpg'%});">
+											</a>
+											<div class="desc">
+												<h2><a href="{% url 'Blog' %}">Travel Safe</a></h2>
+												<p class="admin"><span>1st Jan 2020</span></p>
+											</div>
+										</div>
+							</section>
+							<section class="col-6 col-12-narrower">
+								<h3>Get In Touch</h3>
+								<form action="contact_info" method="POST">
+									{% csrf_token %}
+									<div class="row gtr-50">
+										<div class="col-6 col-12-mobilep">
+											<input type="text" name="fname" id="name" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-mobilep">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="button alt" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+					</div>
+
+					<!-- Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li>
+						</ul>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Horn Aviation. All rights reserved 2020</li><br>
+								<li>Built and Maintained by 120Frames, Begetter</li>
+							</ul>
+						</div>
+
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="{% static 'hornaviationapp/js/jquery.min.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/jquery.dropotron.min.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/browser.min.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/breakpoints.min.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/util.js'%}"></script>
+		<script src="{% static 'hornaviationapp/js/main.js'%}"></script>
+
+	</body>
+</html>
